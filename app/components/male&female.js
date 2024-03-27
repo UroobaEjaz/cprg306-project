@@ -1,15 +1,27 @@
-
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import lady from "../src/assets/lady.png";
 import man from "../src/assets/man.jpg";
+import { useRouter } from "next/navigation";
+
 
 
 export default function MaleFemale() {
 
- 
+  const router = useRouter();
 
+  const handleClick = () => {
+    router.push("./menItem");
+  }
+
+  const handleTheClick = () => {
+    router.push("./ladyItem");
+  }
+
+ 
+ 
 
 
   return (
@@ -20,8 +32,10 @@ export default function MaleFemale() {
             <div className="relative" style={{ height: "500px", width: "300px" }}>
               <Image src={man} alt="man" layout="fill" objectFit="cover" />
             </div>
+           
+            <button className="bg-black hover:bg-blue-700 text-white font-bold py-2 px-4" onClick={handleClick
+            }>Men's wardrobe</button>
             
-            <button className="bg-black hover:bg-blue-700 text-white font-bold py-2 px-4" >Men's wardrobe</button>
             
           </div>
           <div className="text-white flex items-center">
@@ -31,7 +45,7 @@ export default function MaleFemale() {
             <div className="relative" style={{ height: "500px", width: "300px" }}>
               <Image src={lady} alt="lady" layout="fill" objectFit="cover" />
             </div>
-            <button className="bg-black hover:bg-blue-700 text-white font-bold py-2 px-4">Women's wardrobe</button>
+            <button className="bg-black hover:bg-blue-700 text-white font-bold py-2 px-4" onClick ={handleTheClick}>Women's wardrobe</button>
           </div>
         </div>
       </div>
