@@ -15,7 +15,7 @@ export default function MaleFemale() {
   const router = useRouter();
 
   const handleClick = () => {
-    router.push("./menItem");
+    router.push("./menItemPants");
   }
 
   const handleTheClick = () => {
