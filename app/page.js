@@ -15,8 +15,8 @@ export default function Page() {
       <Image src={shoppings} alt="profile pic" className="w-full h-45"></Image>
       </Link>
       <Link href="./Api">
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">
-            50% off items
+          <button className="bg-black hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg mt-4">
+            Upcoming 50% off
           </button>
         </Link>
     </div>
