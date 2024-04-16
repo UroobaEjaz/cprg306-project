@@ -16,13 +16,13 @@ const Page = () => {
           exceptional customer service.
         </p>
         <p className="text-lg mb-4">
-          At our website, you'll find a diverse selection of products ranging from clothing and jewelry to 
-          electronics and accessories. Whether you're shopping for yourself or searching for the perfect gift, 
-          we've got you covered.
+          At our website, you will find a diverse selection of products ranging from clothing and jewelry to 
+          electronics and accessories. Whether you are shopping for yourself or searching for the perfect gift, 
+          we have got you covered.
         </p>
         <p className="text-lg mb-4">
           Our team is passionate about curating the latest trends and must-have items to ensure that you have 
-          access to the best products on the market. We're constantly updating our inventory to bring you new 
+          access to the best products on the market. We are constantly updating our inventory to bring you new 
           and exciting products, so be sure to check back often!
         </p>
         <p className="text-lg mb-4">
