@@ -1,9 +1,10 @@
 "use client";
 import React, { useState } from 'react';
-import Items from '../menItemPants/items';
-import Items2 from '../menItemPants/items2';
+import LadyItems1 from '../ladyItem/LadyItems1';
+import LadyItems2 from '../ladyItem/LadyItems2';
 
-const MenClothingDropdown = () => {
+
+const WomenClothingDropdown = () => {
   const [selectedItem, setSelectedItem] = useState(''); // State to track selected item
   const [selectedItems, setSelectedItems] = useState([]); // State to store selected items
   const [inputValue, setInputValue] = useState(''); // State to store input value
@@ -68,10 +69,10 @@ const MenClothingDropdown = () => {
         <div className="my-4 p-5">
           {/* Render Items based on selectedItem */}
           {selectedItem === 'pants' && (
-            <Items addToCart={addToCart} />
+            <LadyItems1 addToCart={addToCart} />
           )}
           {selectedItem === 'shirts' && (
-            <Items2 addToCart={addToCart} />
+            <LadyItems2 addToCart={addToCart} />
           )}
         </div>
       </div>
@@ -79,4 +80,4 @@ const MenClothingDropdown = () => {
   );
 };
 
-export default MenClothingDropdown;
+export default WomenClothingDropdown;

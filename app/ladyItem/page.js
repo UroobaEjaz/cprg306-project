@@ -1,8 +1,13 @@
 
 import React from "react";
+import LadyItems2 from "./LadyItems2";
+import WomenClothingDropdown from "../components/womenClothingDropdown";
 
 export default function Page() {    
     return(
-            <p>Lady item here</p>
+            <div>
+                <WomenClothingDropdown/>
+            </div>
+                
     )
 }

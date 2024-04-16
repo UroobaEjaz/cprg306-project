@@ -1,4 +1,5 @@
 import { list } from "postcss";
+import React from 'react';
 const items = {
    list: [
  {
@@ -28,4 +29,32 @@ const items = {
 
 ]}
   
-export default items;
+
+
+const Items = ({addToCart}) => {
+   return (
+     <div className='w-full'>
+       <ul className="p-4">
+         {items.list.map(item => (
+        <div key={item.id} className="image-item bg-white rounded-lg overflow-hidden shadow-md mb-4" >
+          <img src={item.image} alt={item.description} className="w-32 h-auto" />
+          <p className="text-gray-700 text-base p-4">{item.description}</p>
+          <button onClick={() => addToCart(item)}className="mb-2 bg-black text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-black focus:ring-opacity-50 mx-auto block">Add to Cart</button>
+         
+        </div>
+      ))}
+       </ul>
+     </div>
+   );
+ };
+
+
+ 
+
+
+// Items.jsx
+
+
+
+
+ export default Items;
