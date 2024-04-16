@@ -14,9 +14,9 @@ function Header() {
 
         <nav>
           <ul className="flex text-2xl">
-            <li className='mr-8'><a href="#" className="hover:text-gray-300">Home</a></li>
-            <li className='mr-8'><a href="#" className="hover:text-gray-300">About</a></li>
-            <li className='mr-8'><a href="#" className="hover:text-gray-300">Contact</a></li>
+            <li className='mr-8'><a href="./mainPages" className="hover:text-gray-300">Home</a></li>
+            <li className='mr-8'><a href="./About" className="hover:text-gray-300">About</a></li>
+            <li className='mr-8'><a href="./contact" className="hover:text-gray-300">Contact</a></li>
         
           
           </ul>
